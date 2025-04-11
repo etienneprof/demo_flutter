@@ -1,4 +1,3 @@
-import 'package:awesome_namer_together/main.dart';
 import 'package:awesome_namer_together/states/my_app_state.dart';
 import 'package:flutter/material.dart';
 

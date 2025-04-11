@@ -1,3 +1,4 @@
+import 'package:awesome_namer_together/widgets/commune_page.dart';
 import 'package:awesome_namer_together/widgets/favorites_page.dart';
 import 'package:awesome_namer_together/widgets/generator_page.dart';
 import 'package:flutter/material.dart';
@@ -20,6 +21,9 @@ class _MyHomePageState extends State<MyHomePage> {
       case 1:
         page = FavoritesPage();
         break;
+      case 2:
+        page = CommunePage();
+        break;
       default:
         throw UnimplementedError('T\'as choisi une page qui existe pas !');
     }
@@ -40,6 +44,10 @@ class _MyHomePageState extends State<MyHomePage> {
                     NavigationRailDestination(
                       icon: Icon(Icons.favorite),
                       label: Text('Favorites'),
+                    ),
+                    NavigationRailDestination(
+                      icon: Icon(Icons.house),
+                      label: Text('Communes'),
                     ),
                   ],
                   selectedIndex: selectedIndex,
